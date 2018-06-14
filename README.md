@@ -1,10 +1,9 @@
 # Deep-Encoding-Pooling-Network-DEP-
-Code release for "Deep Texture Manifold for Ground Terrain Recognition", CVPR 2018
 
 
 [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/papers/Xue_Deep_Texture_Manifold_CVPR_2018_paper.pdf) [[Project]](http://eceweb1.rutgers.edu/vision/gts/gtos.html)
 
-This repository contains the code for our CVPR 2017 paper:
+This repository contains the code for our CVPR 2018 paper:
 
     Jia Xue, Hang Zhang, Kristin Dana
     "Deep Texture Manifold for Ground Terrain Recognition"
