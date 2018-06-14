@@ -24,6 +24,7 @@ git clone git@github.com:jiaxue1993/Deep-Encoding-Pooling-Network-DEP-.git
 cd Deep-Encoding-Pooling-Network-DEP-
 ```
 - Install [Pytorch-Encoding](https://github.com/zhanghang1989/PyTorch-Encoding) 
+- Download the [database](https://drive.google.com/file/d/1Hd1G7aKhsPPMbNrk4zHNJAzoXvUzWJ9M/view?usp=sharing), release to dataset folder
 - Run the code by bash run.sh
 
 ## Datasets
