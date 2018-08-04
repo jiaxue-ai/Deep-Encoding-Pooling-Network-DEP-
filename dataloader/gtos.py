@@ -51,9 +51,10 @@ class Dataloder():
 
         self.trainloader = trainloader 
         self.testloader = testloader
+        self.classes = trainset.classes
     
     def getloader(self):
-        return self.trainloader, self.testloader
+        return self.classes, self.trainloader, self.testloader
 
 
 class Lighting(object):
@@ -81,5 +82,5 @@ if __name__ == "__main__":
     data_dir = 'dataset/gtos-mobile'
     trainset = datasets.ImageFolder(os.path.join(data_dir, 'train'))
     testset = datasets.ImageFolder(os.path.join(data_dir, 'test'))
-    print(len(trainset))
+    print(trainset.classes)
     print(len(testset))

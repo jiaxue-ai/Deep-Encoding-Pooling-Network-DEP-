@@ -47,7 +47,7 @@ def main():
     classes, train_loader, test_loader = Dataloder(args).getloader()
     # init the model
     models = importlib.import_module('model.'+ 'DEPnet')
-    model = models.__dict__.get(args.model)(len(classes), pretrained=True)
+    model = models.Net(len(classes))
     print(model)
     # criterion and optimizer
     criterion = nn.CrossEntropyLoss()

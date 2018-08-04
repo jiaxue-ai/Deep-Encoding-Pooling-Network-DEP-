@@ -7,7 +7,7 @@ import encoding
 import torchvision.models as resnet
 
 class Net(nn.Module):
-    def __init__(self, nclass=31, aux=False, backbone='resnet18'):
+    def __init__(self, nclass, backbone='resnet18'):
         super(Net, self).__init__()
         self.backbone = backbone
         # copying modules from pretrained models
@@ -21,7 +21,6 @@ class Net(nn.Module):
             self.pretrained = resnet.resnet18(pretrained=True)
         else:
             raise RuntimeError('unknown backbone: {}'.format(backbone))
-        self.aux = aux
         n_codes = 8
         self.head = nn.Sequential(
             #nn.Conv2d(512, 512, 1),
